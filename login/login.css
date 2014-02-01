@@ -1,0 +1,31 @@
+body.login {
+	background: url(images/login_bg2.jpg);
+	background-size: 150%;
+	background-size: cover;
+	background-position: 50%;
+}
+
+#login {
+	padding: 6% 0 0;
+}
+
+.login h1 {
+	background: #fff;
+}
+
+.login h1 a {
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+	opacity: 0.3;
+	background-image: url(images/tri-logo.png);
+	background-image: url(images/tri-logo.svg);
+	background-size: 200px 200px;
+}
+
+.login form {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	margin-top: 0;
+}
