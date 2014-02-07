@@ -186,9 +186,9 @@ add_action ('init', 'post_type_init');
 
 function taxonomy_init() {
 	$media_format_labels = array(
-		'name'                  =>  'AV Formats',
-		'singular_name'         =>  'AV Format',
-		'menu_name'             =>  'AV Formats',
+		'name'                  =>  'Formats',
+		'singular_name'         =>  'Format',
+		'menu_name'             =>  'Formats',
 		'all_items'             =>  'All Formats',
 		'edit_item'             =>  'Edit Format',
 		'view_item'             =>  'View Format',
@@ -197,9 +197,9 @@ function taxonomy_init() {
 		'new_item_name'         =>  'New Format',
 		'parent_item'           =>  null,
 		'parent_item_colon'     =>  null,
-		'search_items'          =>  'Search AV Formats',
+		'search_items'          =>  'Search Formats',
 		'popular_items'         =>  null,
-		'not_found'             =>  'No Multimedia Formats found.'
+		'not_found'             =>  'No Formats found.'
 	);
 	
 	$media_format_arguments = array(
