@@ -217,7 +217,7 @@ function taxonomy_init() {
 		'sort'                  =>  false
 	);
 	register_taxonomy ('media-format', 'multimedia', $media_format_arguments );
-	register_taxonomy_for_object_type('media-format', 'media');
+	register_taxonomy_for_object_type('media-format', 'multimedia');
 }
 add_action ('init', 'taxonomy_init');
 
