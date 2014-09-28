@@ -90,6 +90,7 @@ function wc_ga_code() {
 	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 	ga('create', 'UA-162588-4', 'auto');
+	ga('require', 'displayfeatures');
 	ga('send', 'pageview');
 	</script>";
 }
