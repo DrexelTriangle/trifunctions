@@ -95,7 +95,7 @@ function wc_ga_code() { ?>
 	</script>
 
 <?php }
-add_action( 'wp_footer', 'wc_ga_code');
+add_action( 'wp_head', 'wc_ga_code');
 
 //Excerpt Settings
 
