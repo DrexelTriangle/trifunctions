@@ -1,5 +1,5 @@
 body.login {
-	background: url(images/login_bg2.jpg);
+	background: url(images/login_bg.jpg);
 	background-size: 150%;
 	background-size: cover;
 	background-position: 50%;
@@ -10,17 +10,15 @@ body.login {
 }
 
 .login h1 {
-	background: #fff;
+	padding-bottom: 2em;
 }
 
 .login h1 a {
-	height: 200px;
-	width: 200px;
+	height: 120px;
+	width: 120px;
 	margin: 0 auto;
-	opacity: 0.3;
-	background-image: url(images/tri-logo.png);
-	background-image: url(images/tri-logo.svg);
-	background-size: 200px 200px;
+	background-image: url(images/tri-icon.png);
+	background-size: 120px 120px;
 }
 
 .login form {
@@ -28,4 +26,18 @@ body.login {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	margin-top: 0;
+	padding-bottom: 32px;
+}
+
+.login p#nav, .login p#backtoblog {
+	margin: 0;
+	background: #FFF;
+}
+
+.login p#nav {
+	padding-bottom: 8px;
+}
+
+.login p#backtoblog {
+	padding-bottom: 24px;
 }

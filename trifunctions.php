@@ -2,19 +2,11 @@
 /*
 Plugin Name: TriFunctions
 Description: This plugin enables many of the core functions of thetriangle.org. Deactivating will cause many aspects of the site to stop working. To flush the rewrite rules, perform an activation cycle. For assistance, please contact web@thetriangle.org.
-Version: 1.1
+Version: 2.0
 License: The MIT License (MIT)
 Author: The Triangle Web Department
 Author URI: http://thetriangle.org
 */
-
-//Add Thumbnail Sizes
-add_image_size('post-feature', 1280, 620, true);
-add_image_size('single-post-feature', 1480, 560, true);
-add_image_size('feature-wide-small', 840, 320, true);
-add_image_size('169-preview-large', 1600, 900, true);
-add_image_size('169-preview-medium', 800, 450, true);
-add_image_size('169-preview-small', 400, 225, true);
 
 //Current URL
 function this_url() {
@@ -58,13 +50,17 @@ add_filter( 'login_headertitle', 'tri_login_logo_title' );
 
 //Favicons Anyone?
 function wc_favicons() {
-	echo '<link rel="icon" type="image/x-icon" href="' . plugins_url('/trifunctions/favicons/ico/') . 'favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-76@2x.png">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-72@2x.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-57@2x.png">
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-76.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-72.png">
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-57.png">';
+	echo '<link rel="icon" type="image/x-icon" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-76@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-60@3x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-60@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-60.png">
+	<link rel="apple-touch-icon-precomposed" sizes="80x80" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small-40@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="40x40" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small-40.png">
+	<link rel="apple-touch-icon-precomposed" sizes="87x87" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small@3x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="58x58" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="29x29" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small.png">';
 }
 
 add_action ('wp_head', 'wc_favicons');
@@ -72,13 +68,17 @@ add_action ('wp_head', 'wc_favicons');
 //Now for the Admin Panel...
 
 function wc_favicons_admin() {
-	echo '<link rel="icon" type="image/x-icon" href="' . plugins_url('/trifunctions/favicons/ico/') . 'favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-76@2x.png">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-72@2x.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-57@2x.png">
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-76.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-72.png">
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="' . plugins_url('/trifunctions/favicons/png/') . 'favicon-57.png">';
+	echo '<link rel="icon" type="image/x-icon" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-76@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-60@3x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-60@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-60.png">
+	<link rel="apple-touch-icon-precomposed" sizes="80x80" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small-40@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="40x40" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small-40.png">
+	<link rel="apple-touch-icon-precomposed" sizes="87x87" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small@3x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="58x58" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small@2x.png">
+	<link rel="apple-touch-icon-precomposed" sizes="29x29" href="' . plugins_url('/trifunctions/favicons/') . 'Triangle-Small.png">';
 }
 add_action ('admin_head', 'wc_favicons_admin');
 
@@ -100,7 +100,7 @@ add_action( 'wp_head', 'wc_ga_code');
 //Excerpt Settings
 
 function wc_excerpt_length( $length ) {
-	return 50;
+	return 35;
 }
 add_filter( 'excerpt_length', 'wc_excerpt_length', 999 );
 
