@@ -151,32 +151,6 @@ function change_post_object_label() {
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
-// add_filter( 'avatar_defaults', 'new_default_avatar' );
-// function new_default_avatar ( $avatar_defaults ) {
-// 	//Set the URL where the image file for your avatar is located
-// 	$new_avatar_url = get_template_directory_uri() . '/images/avatars/avatar.png';
-// 	//Set the text that will appear to the right of your avatar in Settings>>Discussion
-// 	$avatar_defaults[$new_avatar_url] = 'Your New Default Avatar';
-// 	return $avatar_defaults;
-// }
-
-
-
-//Widgetizing
-function arphabet_widgets_init() {
-
-	register_sidebar( array(
-		'name' => 'Home right sidebar',
-		'id' => 'home_right_1',
-		'before_widget' => '<div>',
-		'after_widget' => '</div>',
-		'before_title' => '<h1 class="rounded">',
-		'after_title' => '</h1>',
-	) );
-}
-add_action( 'widgets_init', 'arphabet_widgets_init' );
-
-
 //Register Multimedia Post Type
 
 function post_type_init() {
