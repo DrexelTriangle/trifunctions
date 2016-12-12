@@ -97,18 +97,6 @@ function wc_ga_code() { ?>
 <?php }
 add_action( 'wp_head', 'wc_ga_code');
 
-//Excerpt Settings
-
-function wc_excerpt_length( $length ) {
-	return 35;
-}
-add_filter( 'excerpt_length', 'wc_excerpt_length', 999 );
-
-function new_excerpt_more( $more ) {
-	return '&hellip; <em><a href="'.post_permalink( $post->ID ).'">Continued</a></em>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
 //Add wrappers to media elements.
 
 add_filter('embed_oembed_html', 'wc_oembed_wrapper', 99, 4);
