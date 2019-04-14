@@ -2,9 +2,9 @@
 /*
 Plugin Name: TriFunctions
 Description: This plugin enables many of the core functions of thetriangle.org. Deactivating will cause many aspects of the site to stop working. To flush the rewrite rules, perform an activation cycle. For assistance, please contact web@thetriangle.org.
-Version: 2.0
+Version: 2.1
 License: The MIT License (MIT)
-Author: The Triangle Web Department
+Author: The Triangle IT Team
 Author URI: http://thetriangle.org
 */
 
